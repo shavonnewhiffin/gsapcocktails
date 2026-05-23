@@ -39,7 +39,7 @@ const Hero = () => {
                 trigger: '#hero',
                 start: 'top top',
                 end: 'bottom top',
-                // Animmation of the hero section will be linked to the scroll position of the page, creating a smooth and interactive experience as users scroll through the content.
+                // Animation of the hero section will be linked to the scroll position of the page, creating a smooth and interactive experience as users scroll through the content.
                 scrub: true,
             }
         }) 
