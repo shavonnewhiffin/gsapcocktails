@@ -37,8 +37,8 @@ const Menu = () => {
         gsap.fromTo(".cocktail img", { opacity: 0, xPercent: -100 }, {
             xPercent: 0, opacity: 1, duration: 1, ease: 'power1.inOut'
         })
-        gsap.fromTo('.details h2', { yPercent: 100, opacity: 0}, { yPercent: 0, opacity: 100, ease:'power1.inOut' })
-        gsap.fromTo('.details p', { yPercent: 100, opacity: 0}, { yPercent: 0, opacity: 100, ease:'power1.inOut' })
+        gsap.fromTo('.details h2', { yPercent: 100, opacity: 0}, { yPercent: 0, opacity: 1, ease:'power1.inOut' })
+        gsap.fromTo('.details p', { yPercent: 100, opacity: 0}, { yPercent: 0, opacity: 1, ease:'power1.inOut' })
     }, [currentIndex]);
 
   return (
@@ -82,7 +82,7 @@ const Menu = () => {
 
             <div className="recipe">
                 <div ref={contentRef} className="info">
-                    <p>Recipe for</p>
+                    <p>Meet our</p>
                     <p id="title">{currentCocktail.name}</p>
                 </div>
                     <div className="details">
